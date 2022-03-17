@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Installing Dependencies"
 sudo apt install install git python3 python3-pip -y
 echo "Installed git, python, python-pip with apt"

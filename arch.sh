@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Installing Dependencies"
 sudo pacman -Syy install git python python-pip --noconfirm
 echo "Installed git, python, python-pip with apt"
