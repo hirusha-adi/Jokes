@@ -125,7 +125,7 @@ def api():
     return render_template("api.html")
 
 
-@app.route("/api/jokes")
+@app.route("/api/joke")
 def jokes_api():
     return str(dbobj.getJoke())
 
@@ -141,6 +141,7 @@ def stupidstuff_api():
 
 
 @app.route("/")
+@app.route("/joke")
 def index():
     data = dbobj.getJoke()
     return render_template(
