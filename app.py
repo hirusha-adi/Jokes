@@ -63,7 +63,7 @@ class Database:
         # create the file if not exists
         if not(os.path.exists(FileName.jokes)):
             r = requests.get(
-                "https://raw.githubusercontent.com/hirusha-adi/TheJokeAPI/main/database/jokes.json").content
+                "https://raw.githubusercontent.com/hirusha-adi/Jokes/main/database/jokes.json").content
             with open(FileName.jokes, "wb") as fmake:
                 fmake.write(r)
         # Load the jokes
@@ -82,7 +82,7 @@ class Database:
         # create the file if not exists
         if not(os.path.exists(FileName.wocka)):
             r = requests.get(
-                "https://raw.githubusercontent.com/hirusha-adi/TheJokeAPI/main/database/wocka.json").content
+                "https://raw.githubusercontent.com/hirusha-adi/Jokes/main/database/wocka.json").content
             with open(FileName.wocka, "wb") as fmake:
                 fmake.write(r)
         # Load the wocka jokes
@@ -101,7 +101,7 @@ class Database:
         # create the file if not exists
         if not(os.path.exists(FileName.stupidstuff)):
             r = requests.get(
-                "https://raw.githubusercontent.com/hirusha-adi/TheJokeAPI/main/database/stupidstuff.json").content
+                "https://raw.githubusercontent.com/hirusha-adi/Jokes/main/database/stupidstuff.json").content
             with open(FileName.stupidstuff, "wb") as fmake:
                 fmake.write(r)
         # Load the stupidstuff jokes
