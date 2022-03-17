@@ -4,6 +4,15 @@
 
 # Showcase
 
+![Screenshot_20220317_151434](https://user-images.githubusercontent.com/36286877/158782061-978ec562-0061-43f6-80f9-22b0262fd029.png)
+
+![Screenshot_20220317_151458](https://user-images.githubusercontent.com/36286877/158782132-cc25a515-c845-4b8f-8728-3c383a0a892b.png)
+
+![Screenshot_20220317_151549](https://user-images.githubusercontent.com/36286877/158782291-0580c5bb-1f77-4f3f-a71e-4303ab94d4d4.png)
+
+![Screenshot_20220317_151605](https://user-images.githubusercontent.com/36286877/158782328-ac566e91-d62f-4407-88e4-c2b4541311ed.png)
+
+
 # Installation
 
 ## Arch Linux
