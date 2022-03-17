@@ -1,6 +1,6 @@
 # TheJokesAPI
 
-"its just a joke"
+## "it's just a joke" ~ nobody
 
 # Showcase (images)
 
