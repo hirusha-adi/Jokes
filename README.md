@@ -1,2 +1,3 @@
-# TheAPI
-the api with many functionalities
+# TheJokesAPI
+
+the jokes API
