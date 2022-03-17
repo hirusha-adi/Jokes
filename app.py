@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template
+from flask import Flask, render_template
 import os
 import json
 import random
@@ -7,9 +7,6 @@ import requests
 
 class FileName:
     _cwd = os.getcwd()
-
-    static_folder = os.path.join(_cwd, "templates")
-    templates_folder = os.path.join(_cwd, "static")
 
     jokes = os.path.join(_cwd, "database", "jokes.json")
     wocka = os.path.join(_cwd, "database", "wocka.json")
@@ -118,27 +115,59 @@ class Database:
         return self.stupidstuff[random.randint(0, self.stupidstuff_length - 1)]
 
 
-app = Flask(__name__,
-            static_folder=FileName.static_folder,
-            template_folder=FileName.templates_folder
-            )
+app = Flask(__name__)
 
 dbobj = Database()
 
 
-@app.route("/jokes")
-def jokes():
+@app.route("/api")
+def api():
+    return render_template("api.html")
+
+
+@app.route("/api/jokes")
+def jokes_api():
     return str(dbobj.getJoke())
+
+
+@app.route("/api/wocka")
+def wocka_api():
+    return str(dbobj.getWocka())
+
+
+@app.route("/api/stupidstuff")
+def stupidstuff_api():
+    return str(dbobj.getStupidStuff())
+
+
+@app.route("/")
+def index():
+    data = dbobj.getJoke()
+    return render_template(
+        "index.html",
+        joke=data["joke"],
+        sub_title=", ".join(data["tags"])
+    )
 
 
 @app.route("/wocka")
 def wocka():
-    return str(dbobj.getWocka())
+    data = dbobj.getWocka()
+    return render_template(
+        "index.html",
+        joke=data["body"],
+        sub_title=str(data["title"]) + " ~ " + str(data["category"])
+    )
 
 
 @app.route("/stupidstuff")
 def stupidstuff():
-    return str(dbobj.getStupidStuff())
+    data = dbobj.getStupidStuff()
+    return render_template(
+        "index.html",
+        joke=data["body"],
+        sub_title=str(data["category"])
+    )
 
 
 def runTheJokesAPI():
