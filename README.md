@@ -1,6 +1,8 @@
 # TheJokesAPI
 
-the jokes API
+"its just a joke"
+
+# Showcase
 
 # Installation
 
