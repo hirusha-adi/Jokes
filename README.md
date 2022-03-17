@@ -16,11 +16,18 @@
 
 ## UI
 
+- `/` or `/joke`
+  - return a User Interface with the joke and the category from `jokes.json`
+- `/wocka`
+  - return a User Interface with the joke and the category from `wocka.json`
+- `/stupidstuff`
+  - return a User Interface with the joke and the category from `stupidstuff.json`
+
 ## API
 
 - ### Information -
   - `/api` - returns a HTML User Interface with basic information and endpoint URLs
-- ### Endpoints
+- ### Endpoints -
   - `/api/jokes`
     - return a json with a randomly select joke from `jokes.json`
   - `/api/wocka`
