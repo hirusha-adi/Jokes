@@ -1,6 +1,6 @@
 # TheJokesAPI
 
-## "it's just a joke" ~ nobody
+this is a simple web server that will tell jokes, this also has an API
 
 # Showcase (images)
 
@@ -86,3 +86,5 @@ python -m pip install -r requirements.txt
 ```
 python app.py
 ```
+
+## "it's just a joke" ~ nobody. lol
