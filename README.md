@@ -1,3 +1,0 @@
-# TheJokesAPI
-
-the jokes API
